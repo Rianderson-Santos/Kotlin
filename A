@@ -1,0 +1,17 @@
+fun <T : Number> verificarParOuImpar(numero: T): String {
+    return if (numero.toDouble() % 2 == 0.0) {
+        "Par"
+    } else {
+        "Ímpar"
+    }
+}
+
+fun main() {
+    val numeroInteiro = 10
+    val numeroDouble = 7.5
+    val numeroLong = 15L
+
+    println("Número $numeroInteiro é ${verificarParOuImpar(numeroInteiro)}")
+    println("Número $numeroDouble é ${verificarParOuImpar(numeroDouble)}")
+    println("Número $numeroLong é ${verificarParOuImpar(numeroLong)}")
+}
