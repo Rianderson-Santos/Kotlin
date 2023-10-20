@@ -1,0 +1,14 @@
+import java.util.*
+
+fun main() {
+    val locale = Locale("br")
+    val locale = Locale("en")
+    val locale = Locale("es") // Altere "es" para o idioma desejado ("en", "es" ou "fr")
+    val messages: ResourceBundle = ResourceBundle.getBundle("messages", locale)
+
+    val welcomeMessage = messages.getString("welcome_message")
+    val errorMessage = messages.getString("error_message")
+
+    println(welcomeMessage)
+    println(errorMessage)
+}
